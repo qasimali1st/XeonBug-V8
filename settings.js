@@ -29,7 +29,7 @@ global.autoread = process.env.AUTO_READ === 'true' || false;
 global.autobio = process.env.AUTO_BIO === 'true' || false;
 global.anti91 = process.env.ANTI_91 === 'true' || false;
 global.autoswview = process.env.VIEW_STATUS === 'true' || false;
-global.location || process.env.TIME_ZONE || 'Pakistan, Karachi'
+global.location = 'Pakistan, Karachi'
 
 //==========================================================================>
 
