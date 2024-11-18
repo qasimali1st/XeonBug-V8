@@ -16,7 +16,7 @@ global.ownernomer || process.env.OWNER_NUMBER || '923444844060'  //put your numb
 global.ownername || process.env.OWNER_NAME || 'Qasim Ali'     //put your name here
 
 global.ownernumber || process.env.CREATOR || '923444844060'  //put your number
-global.botname || process.env.BOT_NAME 'DEVIL-BUG' //name of the bot
+global.botname || process.env.BOT_NAME || 'DEVIL-BUG' //name of the bot
 
 //custom prefix
 global.prefa = process.env.PREFIX ? process.env.PREFIX.split(',') : [''];
