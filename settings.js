@@ -9,39 +9,40 @@
 const fs = require('fs')
 const chalk = require('chalk')
 
+//==========================================================================>
+
 //contact details
-global.ownernomer = "923444844060"
-global.ownername = "Qasim Ali"
+global.ownernomer || process.env.OWNER_NUMBER || '923444844060'  //put your number here
+global.ownername || process.env.OWNER_NAME || 'Qasim Ali'     //put your name here
+
+global.ownernumber || process.env.CREATOR || '923444844060'  //put your number
+global.botname || process.env.BOT_NAME 'DEVIL-BUG' //name of the bot
+
+//custom prefix
+global.prefa = process.env.PREFIX ? process.env.PREFIX.split(',') : [''];
+
+//false=disable and true=enable
+global.autoRecording = process.env.RECORDING === 'true' || false;
+global.autoTyping = process.env.TYPING === 'true' || false;
+global.autorecordtype = process.env.RECORD_TYPE === 'true' || false;
+global.autoread = process.env.AUTO_READ === 'true' || false;
+global.autobio = process.env.AUTO_BIO === 'true' || false;
+global.anti91 = process.env.ANTI_91 === 'true' || false;
+global.autoswview = process.env.VIEW_STATUS === 'true' || false;
+global.location || process.env.TIME_ZONE || 'Pakistan, Karachi'
+
+//==========================================================================>
+
 global.ytname = "YT: GlobalTechInfo"
 global.socialm = "GitHub: GlobalTechInfo"
-global.location = "Pakistan, Karachi, Karachi"
-
-global.ownernumber = '923444844060'  //creator number
-global.ownername = 'Qasim Ali' //owner name
-global.botname = 'XeonBug-V8' //name of the bot
-
 //sticker details
 global.packname = 'Sticker By'
 global.author = 'GlobalTech\n\nContact: +923444844060'
-
 //console view/theme
 global.themeemoji = '🪀'
-global.wm = "Global Bot"
-
+global.wm = "DEVIL-BUG"
 //theme link
 global.link = 'https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07'
-
-//custom prefix
-global.prefa = ['','!','.','#','&']
-
-//false=disable and true=enable
-global.autoRecording = false //auto recording
-global.autoTyping = false //auto typing
-global.autorecordtype = false //auto typing + recording
-global.autoread = false //auto read messages
-global.autobio = false //auto update bio
-global.anti91 = false //auto block +91 
-global.autoswview = false //auto view status/story
 
 //menu type 
 //v1 is image menu, 
@@ -59,14 +60,14 @@ global.bimg = '//9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAQw
 //reply messages
 global.mess = {
     done: 'Done !',
-    prem: 'This feature can be used by premium user only',
-    admin: 'This feature can be used by admin only',
-    botAdmin: 'This feature can only be used when the bot is a group admin ',
-    owner: 'This feature can be used by owner only',
-    group: 'This feature is only for groups',
-    private: 'This feature is only for private chats',
-    wait: 'In process... ',    
-    error: 'Error!',
+    prem: 'This feature can be used by premium user only 🧐',
+    admin: 'This feature can be used by admin only 🤩',
+    botAdmin: 'This feature can only be used when the bot is a group admin 🤗',
+    owner: 'This feature can be used by owner only 🎩',
+    group: 'This feature is only for groups 👥',
+    private: 'This feature is only for private chats 🫂',
+    wait: 'In process... ⏳',    
+    error: 'Error! ❎',
 }
 
 global.thumb = fs.readFileSync('./GlobalMedia/thumb.jpg')
