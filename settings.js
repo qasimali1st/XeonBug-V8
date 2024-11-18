@@ -15,7 +15,7 @@ const chalk = require('chalk')
 global.ownernomer || process.env.OWNER_NUMBER || '923444844060'  //put your number here
 global.ownername || process.env.OWNER_NAME || 'Qasim Ali'     //put your name here
 
-global.ownernumber || process.env.CREATOR || '923444844060'  //put your number
+global.ownernumber = '923444844060'  //put your number
 global.botname = 'DEVIL-BUG' //name of the bot
 
 //custom prefix
