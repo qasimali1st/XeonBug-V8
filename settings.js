@@ -12,8 +12,8 @@ const chalk = require('chalk')
 //==========================================================================>
 
 //contact details
-global.ownernomer || process.env.OWNER_NUMBER || '923444844060'  //put your number here
-global.ownername || process.env.OWNER_NAME || 'Qasim Ali'     //put your name here
+global.ownernomer = '923444844060'  //put your number here
+global.ownername = 'Qasim Ali'     //put your name here
 
 global.ownernumber = '923444844060'  //put your number
 global.botname = 'DEVIL-BUG' //name of the bot
